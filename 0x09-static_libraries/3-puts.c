@@ -1,9 +1,12 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
-void _puts(char *s)
+/**
+ * _puts - Print astring to stdout
+ * @str: The string to be printed
+ */
+void _puts(char *str)
 {
-	puts(s);
+	while (*str)
+		_putchar(*str++);
+	_putchar('\n');
 }
